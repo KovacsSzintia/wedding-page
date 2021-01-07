@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header formats */
+
+header {
+  background-image: url(assets/wedding-landing-cover.jpg);
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.headline {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  text-align: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.breakpoint {
+  display: inline-block;
+  border-bottom: .5px solid white;
+  width: 2rem;
+}
+.headline h2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.headline h1 {
+  display: inline-block;
+  padding-top: 1rem;
+  border-top: 1px solid white;
+}
+
+/* font settings */
+
+.handwritten {
+  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 500;
+  color: #d2ba87;
+}
+
+
+.level2headline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+
+
