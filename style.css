@@ -28,24 +28,25 @@ header {
   color: white;
   align-items: center;
   justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .breakpoint {
   display: inline-block;
-  border-bottom: .5px solid white;
+  border-bottom: .3px solid white;
   width: 2rem;
 }
 .headline h2 {
   display: inline-block;
   width: 100%;
   font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding: 1rem;
 }
 .headline h1 {
   display: inline-block;
   padding-top: 1rem;
-  border-top: 1px solid white;
+  border-top: 1.5px solid white;
+  color: #d2ba87;
 }
 
 /* font settings */
@@ -54,15 +55,109 @@ header {
   font-size: 3rem;
   font-family: 'Great Vibes', cursive;
   font-weight: 500;
-  color: #d2ba87;
+  text-align: center;
+  padding: 1rem;
 }
 
 
 .level2headline {
   font-family: 'Libre Baskerville', serif;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
+.light-wrapper p, .dark-wrapper p, .dark-wrapper li, .dark-wrapper q{
+  font-family: 'Mulish', sans-serif;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+  font-size: 115%
+}
 
+.light-wrapper h2 {
+  font-weight: 700;
+  
+}
+.dark-wrapper q{
+  font-style: italic;
+}
 
+.dark-wrapper h2{
+  text-align: center;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* content format */
+ 
+.content {
+  background-image: url(assets/wedding-landing-background.png);
+  line-height: 1.5rem;
+}
+
+.dark-wrapper li{
+  padding-bottom: 0;
+  line-height: 1.5rem
+}
+
+.light-wrapper{
+  width: 100vw;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  color: #444349;
+}
+img{
+  width: 40%;
+}
+.light-wrapper p{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.content-break {
+  display: inline-block;
+  width: 30%;
+  height: 4px;
+  background-color: #444349;  
+}
+a {
+  color:#bd806e;
+  text-decoration: none;
+}
+.dark-wrapper{
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  width: 100vw;
+  padding: 1rem;
+  padding-bottom:2rem;
+}
+.dark-wrapper h1{
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.dark-wrapper  q{
+  display: inline-block;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+p strong{
+  display: inline-block;
+  font-weight: bold;
+}
+.q-and-a::after{
+  content: "";
+  display: block;
+  background-color: #d2ba87;
+  height: 3px;
+  width: 50vw;
+  margin-left: 25%;
+}
+.footer-content{
+  text-align: center;
+  background-color: hsla(100,0%,0%,.6);
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-weight: lighter;
+  padding: 1rem;
+  font-size: .8rem;
+}
