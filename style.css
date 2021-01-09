@@ -49,6 +49,10 @@ header {
   color: #d2ba87;
 }
 
+.head-content-break{
+  display: none;
+}
+
 /* font settings */
 
 .handwritten {
@@ -93,18 +97,18 @@ header {
 .content {
   background-image: url(assets/wedding-landing-background.png);
   line-height: 1.5rem;
+  width: 100vw;
 }
 
 .dark-wrapper li{
   padding-bottom: 0;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
 
 .light-wrapper{
   width: 100vw;
   text-align: center;
   padding: 2rem 1rem 1rem 1rem;
-  color: #444349;
 }
 img{
   width: 40%;
@@ -160,4 +164,77 @@ p strong{
   font-weight: lighter;
   padding: 1rem;
   font-size: .8rem;
+}
+
+/* styles for desktop */
+
+@media (min-width:768px){
+  
+  /* ==== headline ==== */
+  
+  .headline{
+    width: 50%;
+  }
+  .headline h1{
+    font-size: 7rem;
+    line-height: 10rem;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+  .headline h2{
+    font-variant-caps: all-petite-caps;
+    font-size: 1.5rem;
+    display: block;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .head-content span {
+    font-variant-caps: normal;
+  }
+  .head-content-break {
+    display: block;
+    background-color: white;
+    width: 200px;
+    height: 2px;
+  }
+  
+  /* === content === */
+  
+  .locations {
+    width: 32%;
+    float: left;
+    padding: 1rem;
+  }
+  .content-break {
+    display: none;
+  }
+  .program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dark-wrapper q{
+    text-align: left;
+    width: 30vw;
+  }
+  .gift-pic {
+    width: 15%;
+  }
+  .q-and-a::after {
+    display: none;
+  }
+  .questions {
+    display: flex;
+  }
+  .q-and-a {
+    padding: 2rem;
+    width: 32%;
+  }
+  .contact-break {
+    display: none;
+  }
+  .footer-content {
+    padding: 2rem;
+  }
 }
